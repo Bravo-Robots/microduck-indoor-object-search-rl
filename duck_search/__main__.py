@@ -34,7 +34,7 @@ def positive_seconds(value):
 
 def parser():
     p = argparse.ArgumentParser(
-        description="MicroDuck Room Search — simulated object search with PPO"
+        description="MicroDuck Indoor Object Search RL — simulated object search with PPO"
     )
     p.add_argument("--version", action="version", version=__version__)
     sub = p.add_subparsers(dest="command", required=True)

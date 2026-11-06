@@ -25,14 +25,16 @@ def package(destination):
             relative = path.relative_to(ROOT).as_posix()
             content = path.read_bytes()
             info = zipfile.ZipInfo(
-                "microduck-room-search/" + relative, date_time=(2026, 11, 6, 0, 0, 0)
+                "microduck-indoor-object-search-rl/" + relative,
+                date_time=(2026, 11, 6, 0, 0, 0),
             )
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = (0o100755 if path.name == "run.sh" else 0o100644) << 16
             archive.writestr(info, content)
             hashes.append(hashlib.sha256(content).hexdigest() + "  " + relative)
         info = zipfile.ZipInfo(
-            "microduck-room-search/MANIFEST.sha256", date_time=(2026, 11, 6, 0, 0, 0)
+            "microduck-indoor-object-search-rl/MANIFEST.sha256",
+            date_time=(2026, 11, 6, 0, 0, 0),
         )
         info.compress_type = zipfile.ZIP_DEFLATED
         info.external_attr = 0o100644 << 16
@@ -49,6 +51,6 @@ if __name__ == "__main__":
     p.add_argument(
         "--output",
         type=Path,
-        default=ROOT.parent / f"microduck-room-search-v{VERSION}.zip",
+        default=ROOT.parent / f"microduck-indoor-object-search-rl-v{VERSION}.zip",
     )
     package(p.parse_args().output)

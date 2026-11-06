@@ -1,5 +1,5 @@
 [project]
-name = "microduck-room-search"
+name = "microduck-indoor-object-search-rl"
 version = "0.2.1"
 description = "Object-search training and physical rehearsal for MicroDuck"
 requires-python = ">=3.12,<3.13"

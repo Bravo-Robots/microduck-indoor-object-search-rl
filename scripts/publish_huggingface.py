@@ -22,7 +22,7 @@ language:
 - es
 license: other
 license_name: mixed-apache-2.0-and-cc-by-nc-sa-4.0
-license_link: https://github.com/Bravo-Robots/microduck-room-search/blob/main/THIRD_PARTY.md
+license_link: https://github.com/Bravo-Robots/microduck-indoor-object-search-rl/blob/main/THIRD_PARTY.md
 library_name: pytorch
 pipeline_tag: reinforcement-learning
 tags:
@@ -65,7 +65,7 @@ def publish(args):
             repo_id=args.repo_id,
             repo_type="model",
             folder_path=folder,
-            commit_message=f"Release MicroDuck Room Search v{VERSION}",
+            commit_message=f"Release MicroDuck Indoor Object Search RL v{VERSION}",
         )
         api.create_tag(
             args.repo_id, tag=f"v{VERSION}", revision=commit.oid, exist_ok=True

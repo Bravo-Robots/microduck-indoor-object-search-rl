@@ -1,8 +1,8 @@
-# MicroDuck Room Search
+# MicroDuck Indoor Object Search RL
 
 **A reproducible simulation project: train a search supervisor with PPO, then run it on a free-floating MicroDuck in a furnished MuJoCo room.**
 
-[GitHub · Bravo Robots](https://github.com/Bravo-Robots/microduck-room-search) · [GitHub · David](https://github.com/david2526IA/microduck-room-search) · [Hugging Face · models and assets](https://huggingface.co/BravoRobots/microduck-room-search)
+[GitHub · Bravo Robots](https://github.com/Bravo-Robots/microduck-indoor-object-search-rl) · [GitHub · David](https://github.com/david2526IA/microduck-indoor-object-search-rl) · [Hugging Face · models and assets](https://huggingface.co/BravoRobots/microduck-indoor-object-search-rl)
 
 ![Workshop room](docs/media/room.png)
 
@@ -11,6 +11,9 @@
 Version **0.2.1** is a simulation research release. It searches for three specified
 objects: a red ball, a blue box and a yellow cylinder. It does not yet recognize
 arbitrary household objects or run autonomously on a physical MicroDuck.
+
+Also described in Spanish as **búsqueda de objetos en interiores con aprendizaje
+por refuerzo**. Python imports continue to use the `duck_search` module.
 
 ## Quick start
 
@@ -200,17 +203,17 @@ rendering and a full-body integration mission in an unobstructed aisle.
 The integration test requires RGB detection, motor-driven approach, a verified
 confirmation, no fall and no contact. Search performance in clutter is evaluated
 separately in the fixed-seed benchmark. Check the latest run on
-[Bravo Robots](https://github.com/Bravo-Robots/microduck-room-search/actions)
-or the [personal mirror](https://github.com/david2526IA/microduck-room-search/actions).
+[Bravo Robots](https://github.com/Bravo-Robots/microduck-indoor-object-search-rl/actions)
+or the [personal mirror](https://github.com/david2526IA/microduck-indoor-object-search-rl/actions).
 
 The Hugging Face model repository contains the same code, room assets and frozen
 release weights, with model-card metadata. Its `v0.2.1` tag pins this release.
 To validate or publish a future model update using your own authenticated account:
 
 ```bash
-uv run python scripts/publish_huggingface.py --repo-id OWNER/microduck-room-search
+uv run python scripts/publish_huggingface.py --repo-id OWNER/microduck-indoor-object-search-rl
 uv run --with huggingface-hub python scripts/publish_huggingface.py \
-  --repo-id OWNER/microduck-room-search --publish
+  --repo-id OWNER/microduck-indoor-object-search-rl --publish
 ```
 
 ## Known limits

@@ -1,4 +1,4 @@
-# MicroDuck Room Search supervisor — v0.2.1
+# MicroDuck Indoor Object Search RL supervisor — v0.2.1
 
 **Purpose:** choose exploration and approach actions for three colour-coded
 objects in the bundled simulation room. Simulation research model; physical

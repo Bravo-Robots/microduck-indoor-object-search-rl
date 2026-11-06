@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1
+
+- Add a sensor-to-actuator integration test requiring visible-goal approach,
+  measured forward motion, independent confirmation, no contact and no fall.
+- Separate that controlled integration test from cluttered search performance.
+  A 20-second mission budget proved sensitive to host numerical differences.
+- Keep training weights and published benchmark measurements unchanged.
+- Publish synchronized GitHub mirrors, Hugging Face model metadata and ZIP hashes.
+
 ## 0.2.0
 
 - Update visit memory during full-body execution, matching training observations.

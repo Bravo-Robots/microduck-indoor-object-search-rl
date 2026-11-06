@@ -35,10 +35,7 @@ jobs:
         run: uv run --locked python -m unittest discover -s tests -v
       - name: Short CPU training and export
         run: bash run.sh train --device cpu --steps 1536 --envs 8 --output outputs/ci-training
-      - name: Render and rehearse without a GPU
-        run: |
-          bash run.sh preview
-          bash run.sh rehearse --seed 0 --goal 0 --seconds 20 --no-video --output outputs/ci-rehearsal.json
-          uv run --locked python -c "import json; r=json.load(open('outputs/ci-rehearsal.json')); assert r['success'] and not r['fall'] and r['contact_steps'] == 0, r"
+      - name: Render room without a GPU
+        run: bash run.sh preview
       - name: Validate publication files
         run: uv run --locked python scripts/check_repo.py

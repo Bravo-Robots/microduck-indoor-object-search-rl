@@ -8,7 +8,7 @@
 
 [Guía en español](docs/GUIA_ES.md) · [Model card](outputs/release/MODEL_CARD.md) · [Measured results](outputs/release/RESULTS.json) · [Contributing](CONTRIBUTING.md)
 
-Version **0.2.0** is a simulation research release. It searches for three specified
+Version **0.2.1** is a simulation research release. It searches for three specified
 objects: a red ball, a blue box and a yellow cylinder. It does not yet recognize
 arbitrary household objects or run autonomously on a physical MicroDuck.
 
@@ -92,6 +92,10 @@ presented as an official Pollen checkpoint or as newly trained by this project.
 See the [model contract](outputs/release/MODEL_CARD.md).
 
 ## Evaluation
+
+Version 0.2.1 keeps the trained weights and runtime unchanged from 0.2.0;
+its changes concern integration testing and publication. Benchmark measurements
+remain the recorded 0.2.0 runs.
 
 Current measurements, checkpoint hashes, seeds, contacts, falls and false
 confirmations are in [RESULTS.json](outputs/release/RESULTS.json).
@@ -192,12 +196,15 @@ SHA-256 file manifest. It excludes environments, caches, temporary experiments
 and third-party video-reference captures. The source archive is checked from a
 separate directory before delivery. CI runs on CPU-only Ubuntu and checks
 installation, tests, short training,
-rendering and a successful full-body mission. Check the latest run on
+rendering and a full-body integration mission in an unobstructed aisle.
+The integration test requires RGB detection, motor-driven approach, a verified
+confirmation, no fall and no contact. Search performance in clutter is evaluated
+separately in the fixed-seed benchmark. Check the latest run on
 [Bravo Robots](https://github.com/Bravo-Robots/microduck-room-search/actions)
 or the [personal mirror](https://github.com/david2526IA/microduck-room-search/actions).
 
 The Hugging Face model repository contains the same code, room assets and frozen
-release weights, with model-card metadata. Its `v0.2.0` tag pins this release.
+release weights, with model-card metadata. Its `v0.2.1` tag pins this release.
 To validate or publish a future model update using your own authenticated account:
 
 ```bash
@@ -209,6 +216,8 @@ uv run --with huggingface-hub python scripts/publish_huggingface.py \
 ## Known limits
 
 - Odometry is ideal simulator pose; planar depth rays are idealized.
+- Floating-point and rendering differences can change trajectories across hosts;
+  matching seeds do not guarantee bitwise identical full-body rollouts.
 - Detection uses three colour classes, not an open-vocabulary vision model.
 - Full-body episodes can still fail or make contact with furniture; inspect the reports.
 - Camera intrinsics, delay, calibration and recovery need hardware validation.

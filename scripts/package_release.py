@@ -2,10 +2,13 @@
 
 import argparse
 import hashlib
+import tomllib
 import zipfile
 from pathlib import Path
 
 from check_repo import ROOT, publication_files, validate
+
+VERSION = tomllib.loads((ROOT / "pyproject.toml").read_text())["project"]["version"]
 
 
 def package(destination):
@@ -44,6 +47,8 @@ def package(destination):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument(
-        "--output", type=Path, default=ROOT.parent / "microduck-room-search-v0.2.0.zip"
+        "--output",
+        type=Path,
+        default=ROOT.parent / f"microduck-room-search-v{VERSION}.zip",
     )
     package(p.parse_args().output)

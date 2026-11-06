@@ -63,6 +63,7 @@ uv run python scripts/package_release.py
 ```
 
 El ZIP resultante contiene los archivos públicos y sus hashes. Los entornos,
-referencias de vídeo y pruebas temporales quedan fuera. La configuración de CI
-se ejecutará también en GitHub al publicar; una comprobación local no equivale
-por sí misma a un resultado de CI alojado.
+referencias de vídeo y pruebas temporales quedan fuera. La CI se ejecuta en ambos repositorios de GitHub. Incluye una búsqueda en un
+pasillo despejado para verificar percepción, avance con motores y confirmación.
+El rendimiento entre muebles se mide por separado en los benchmarks; las
+trayectorias pueden variar entre equipos por diferencias numéricas.

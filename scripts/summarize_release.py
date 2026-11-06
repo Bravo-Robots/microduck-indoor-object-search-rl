@@ -1,6 +1,7 @@
 """Summarize measured results; never invent test counts or benchmark outcomes."""
 
 import json
+import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -9,7 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 def summarize():
     folder = ROOT / "benchmarks/v0.2"
     result = {
-        "version": "0.2.0",
+        "version": tomllib.loads((ROOT / "pyproject.toml").read_text())["project"][
+            "version"
+        ],
         "release": json.loads((ROOT / "outputs/release/manifest.json").read_text()),
     }
     for key, name in [

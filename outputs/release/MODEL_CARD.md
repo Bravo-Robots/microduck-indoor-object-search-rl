@@ -1,8 +1,10 @@
-# MicroDuck Room Search supervisor — v0.2.0
+# MicroDuck Room Search supervisor — v0.2.1
 
 **Purpose:** choose exploration and approach actions for three colour-coded
 objects in the bundled simulation room. Simulation research model; physical
 hardware deployment has not been validated.
+
+The v0.2.1 packaging update keeps the v0.2.0 trained weights unchanged.
 
 ## Training and provenance
 

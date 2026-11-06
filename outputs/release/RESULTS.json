@@ -1,7 +1,7 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "release": {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "kind": "supervisory_search",
     "input": [
       1,

@@ -1,0 +1,79 @@
+{
+  "version": "0.2.0",
+  "release": {
+    "version": "0.2.0",
+    "kind": "supervisory_search",
+    "input": [
+      1,
+      45
+    ],
+    "output": [
+      1,
+      6
+    ],
+    "direct_robotctl_load": false,
+    "training_simulator": "SE2 proxy, PPO",
+    "training_steps": 11993088,
+    "selected_checkpoint_steps": 10444800,
+    "training_seed": 42,
+    "validation_seed": 937,
+    "motor_policies": [
+      "progresion_4_mejor.onnx",
+      "velstand.onnx",
+      "alpha_stand.onnx"
+    ],
+    "actor_inputs": "Forward depth, visible RGB detections, odometry and visit memory; no hidden target position",
+    "sha256": {
+      "best.pt": "0f9948a6d547e1f5408c7a1d4a1108b4475d668803bb4f1c35b2fddf411f8d40",
+      "search_policy.onnx": "6bb524da8b1575d38f4c297261c1fc4417963b8f0371a145ba9c679980fdc8f6"
+    }
+  },
+  "proxy": {
+    "episodes": 256,
+    "success_rate": 0.92578125,
+    "mean_steps": 58.7421875,
+    "collision_step_rate": 0.35170900385689585,
+    "seed": 3030,
+    "simulator": "SE2 search proxy, ideal forward-depth and object detector"
+  },
+  "mujoco_rl": {
+    "version": "0.2.0",
+    "episodes": 60,
+    "successes": 49,
+    "success_rate": 0.8166666666666667,
+    "falls": 9,
+    "false_confirmations": 0,
+    "episodes_with_contacts": 4,
+    "controller": "rl",
+    "start_seed": 10,
+    "seed_count": 20,
+    "seconds_per_episode": 108,
+    "checkpoint_sha256": "0f9948a6d547e1f5408c7a1d4a1108b4475d668803bb4f1c35b2fddf411f8d40",
+    "simulator": "MuJoCo full body + BAM + RGB detector; ideal odometry/depth; depth guard enabled"
+  },
+  "mujoco_baseline": {
+    "version": "0.2.0",
+    "episodes": 60,
+    "successes": 28,
+    "success_rate": 0.4666666666666667,
+    "falls": 0,
+    "false_confirmations": 0,
+    "episodes_with_contacts": 3,
+    "controller": "baseline",
+    "start_seed": 10,
+    "seed_count": 20,
+    "seconds_per_episode": 108,
+    "checkpoint_sha256": null,
+    "simulator": "MuJoCo full body + BAM + RGB detector; ideal odometry/depth; depth guard enabled",
+    "execution_seed_batches": [
+      [
+        10,
+        18
+      ],
+      [
+        19,
+        29
+      ]
+    ]
+  }
+}

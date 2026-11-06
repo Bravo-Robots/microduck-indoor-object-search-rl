@@ -1,0 +1,864 @@
+{
+  "seed": 0,
+  "size": [
+    5.0,
+    4.0
+  ],
+  "parts": [
+    {
+      "name": "floor",
+      "pos": [
+        0,
+        0,
+        -0.04
+      ],
+      "size": [
+        5.1,
+        4.1,
+        0.08
+      ],
+      "color": [
+        0.43,
+        0.46,
+        0.49,
+        1
+      ],
+      "collision": true,
+      "category": "floor",
+      "type": "box"
+    },
+    {
+      "name": "wall_n",
+      "pos": [
+        0,
+        2.04,
+        0.65
+      ],
+      "size": [
+        5.16,
+        0.08,
+        1.3
+      ],
+      "color": [
+        0.78,
+        0.8,
+        0.79,
+        1
+      ],
+      "collision": true,
+      "category": "wall",
+      "type": "box"
+    },
+    {
+      "name": "wall_s",
+      "pos": [
+        0,
+        -2.04,
+        0.08
+      ],
+      "size": [
+        5.16,
+        0.08,
+        0.16
+      ],
+      "color": [
+        0.78,
+        0.8,
+        0.79,
+        1
+      ],
+      "collision": true,
+      "category": "wall",
+      "type": "box"
+    },
+    {
+      "name": "wall_w",
+      "pos": [
+        -2.54,
+        0,
+        0.65
+      ],
+      "size": [
+        0.08,
+        4.0,
+        1.3
+      ],
+      "color": [
+        0.78,
+        0.8,
+        0.79,
+        1
+      ],
+      "collision": true,
+      "category": "wall",
+      "type": "box"
+    },
+    {
+      "name": "wall_e",
+      "pos": [
+        2.54,
+        0,
+        0.65
+      ],
+      "size": [
+        0.08,
+        4.0,
+        1.3
+      ],
+      "color": [
+        0.78,
+        0.8,
+        0.79,
+        1
+      ],
+      "collision": true,
+      "category": "wall",
+      "type": "box"
+    },
+    {
+      "name": "flight_case_0",
+      "pos": [
+        -1.067129195042851,
+        0.3447488113033289,
+        0.175
+      ],
+      "size": [
+        0.72,
+        0.48,
+        0.35
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_lid_0",
+      "pos": [
+        -1.067129195042851,
+        0.3447488113033289,
+        0.358
+      ],
+      "size": [
+        0.735,
+        0.495,
+        0.016
+      ],
+      "color": [
+        0.2,
+        0.23,
+        0.25,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_0_-0.25",
+      "pos": [
+        -1.319129195042851,
+        0.09874881130332891,
+        0.24499999999999997
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_0_0.25",
+      "pos": [
+        -0.815129195042851,
+        0.09874881130332891,
+        0.24499999999999997
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "flight_case_1",
+      "pos": [
+        0.5398336457446867,
+        0.13396663252684698,
+        0.2
+      ],
+      "size": [
+        0.65,
+        0.43,
+        0.4
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_lid_1",
+      "pos": [
+        0.5398336457446867,
+        0.13396663252684698,
+        0.40800000000000003
+      ],
+      "size": [
+        0.665,
+        0.445,
+        0.016
+      ],
+      "color": [
+        0.2,
+        0.23,
+        0.25,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_1_-0.23",
+      "pos": [
+        0.31233364574468675,
+        -0.08703336747315302,
+        0.27999999999999997
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_1_0.23",
+      "pos": [
+        0.7673336457446867,
+        -0.08703336747315302,
+        0.27999999999999997
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "flight_case_2",
+      "pos": [
+        1.7251848574080653,
+        1.3490613385466532,
+        0.16
+      ],
+      "size": [
+        0.58,
+        0.5,
+        0.32
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_lid_2",
+      "pos": [
+        1.7251848574080653,
+        1.3490613385466532,
+        0.328
+      ],
+      "size": [
+        0.595,
+        0.515,
+        0.016
+      ],
+      "color": [
+        0.2,
+        0.23,
+        0.25,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_2_-0.20",
+      "pos": [
+        1.5221848574080652,
+        1.0930613385466532,
+        0.22399999999999998
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_2_0.20",
+      "pos": [
+        1.9281848574080653,
+        1.0930613385466532,
+        0.22399999999999998
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "flight_case_3",
+      "pos": [
+        -1.6244074138158768,
+        1.4050791746361597,
+        0.125
+      ],
+      "size": [
+        0.55,
+        0.4,
+        0.25
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_lid_3",
+      "pos": [
+        -1.6244074138158768,
+        1.4050791746361597,
+        0.258
+      ],
+      "size": [
+        0.5650000000000001,
+        0.41500000000000004,
+        0.016
+      ],
+      "color": [
+        0.2,
+        0.23,
+        0.25,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_3_-0.19",
+      "pos": [
+        -1.8169074138158767,
+        1.1990791746361598,
+        0.175
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_3_0.19",
+      "pos": [
+        -1.431907413815877,
+        1.1990791746361598,
+        0.175
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "flight_case_4",
+      "pos": [
+        0.11046999795170148,
+        1.6044173817090643,
+        0.15
+      ],
+      "size": [
+        0.45,
+        0.35,
+        0.3
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_lid_4",
+      "pos": [
+        0.11046999795170148,
+        1.6044173817090643,
+        0.308
+      ],
+      "size": [
+        0.465,
+        0.365,
+        0.016
+      ],
+      "color": [
+        0.2,
+        0.23,
+        0.25,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_4_-0.16",
+      "pos": [
+        -0.04703000204829852,
+        1.4234173817090643,
+        0.21
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "case_latch_4_0.16",
+      "pos": [
+        0.2679699979517015,
+        1.4234173817090643,
+        0.21
+      ],
+      "size": [
+        0.045,
+        0.018,
+        0.065
+      ],
+      "color": [
+        0.66,
+        0.58,
+        0.33,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "table_top",
+      "pos": [
+        0.85,
+        -1.12,
+        0.68
+      ],
+      "size": [
+        1.2,
+        0.65,
+        0.055
+      ],
+      "color": [
+        0.57,
+        0.38,
+        0.2,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "table_leg_0_0",
+      "pos": [
+        0.35,
+        -1.35,
+        0.325
+      ],
+      "size": [
+        0.06,
+        0.06,
+        0.65
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "table_leg_0_1",
+      "pos": [
+        0.35,
+        -0.8900000000000001,
+        0.325
+      ],
+      "size": [
+        0.06,
+        0.06,
+        0.65
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "table_leg_1_0",
+      "pos": [
+        1.35,
+        -1.35,
+        0.325
+      ],
+      "size": [
+        0.06,
+        0.06,
+        0.65
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "table_leg_1_1",
+      "pos": [
+        1.35,
+        -0.8900000000000001,
+        0.325
+      ],
+      "size": [
+        0.06,
+        0.06,
+        0.65
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "low_screen",
+      "pos": [
+        -0.55,
+        -0.65,
+        0.23
+      ],
+      "size": [
+        0.1,
+        0.75,
+        0.46
+      ],
+      "color": [
+        0.34,
+        0.39,
+        0.42,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "light_base",
+      "pos": [
+        -2.08,
+        0.15,
+        0.025
+      ],
+      "size": [
+        0.32,
+        0.25,
+        0.05
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "light_post",
+      "pos": [
+        -2.08,
+        0.15,
+        0.38
+      ],
+      "size": [
+        0.035,
+        0.035,
+        0.7
+      ],
+      "color": [
+        0.48,
+        0.49,
+        0.5,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "worklight",
+      "pos": [
+        -2.08,
+        0.15,
+        0.77
+      ],
+      "size": [
+        0.3,
+        0.08,
+        0.22
+      ],
+      "color": [
+        0.055,
+        0.065,
+        0.08,
+        1
+      ],
+      "collision": true,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "worklight_face",
+      "pos": [
+        -2.08,
+        0.103,
+        0.77
+      ],
+      "size": [
+        0.25,
+        0.012,
+        0.17
+      ],
+      "color": [
+        0.92,
+        0.92,
+        0.86,
+        1
+      ],
+      "collision": false,
+      "category": "furniture",
+      "type": "box"
+    },
+    {
+      "name": "step_0",
+      "pos": [
+        -0.3,
+        1.0,
+        0.0025
+      ],
+      "size": [
+        0.14,
+        0.4,
+        0.005
+      ],
+      "color": [
+        0.57,
+        0.38,
+        0.2,
+        1
+      ],
+      "collision": true,
+      "category": "terrain",
+      "type": "box"
+    },
+    {
+      "name": "step_1",
+      "pos": [
+        -0.15999999999999998,
+        1.0,
+        0.005
+      ],
+      "size": [
+        0.14,
+        0.4,
+        0.01
+      ],
+      "color": [
+        0.57,
+        0.38,
+        0.2,
+        1
+      ],
+      "collision": true,
+      "category": "terrain",
+      "type": "box"
+    },
+    {
+      "name": "step_2",
+      "pos": [
+        -0.019999999999999962,
+        1.0,
+        0.0075
+      ],
+      "size": [
+        0.14,
+        0.4,
+        0.015
+      ],
+      "color": [
+        0.57,
+        0.38,
+        0.2,
+        1
+      ],
+      "collision": true,
+      "category": "terrain",
+      "type": "box"
+    }
+  ],
+  "targets": [
+    [
+      0.8303053975105286,
+      -1.4289625883102417
+    ],
+    [
+      1.1953712701797485,
+      0.8363076448440552
+    ],
+    [
+      1.5790117979049683,
+      -0.4676738679409027
+    ]
+  ],
+  "spawn": [
+    1.8518157005310059,
+    -0.5269001126289368,
+    0.0
+  ]
+}

@@ -1,0 +1,2910 @@
+{
+  "success": false,
+  "fall": false,
+  "simulated_seconds": 107.99999999997335,
+  "wall_seconds": 5.616047143936157,
+  "goal": "cilindro_amarillo",
+  "seed": 23,
+  "contact_steps": 0,
+  "detector_visible_observations": 14,
+  "controller": "rl",
+  "false_confirmations": 0,
+  "depth_guard_overrides": 113,
+  "depth_guard": "10 Hz, depth-only advance-to-turn override, identical for RL and baseline",
+  "termination_reason": "timeout",
+  "scene_file": "seed23_goal2.scene.xml",
+  "success_criterion": "Actor declares visible target within 0.55 m estimated camera range; evaluator verifies target pixels and trunk distance <0.75 m",
+  "physics": "MuJoCo 3.10, free floating MicroDuck, BAM M6, ONNX motor policies at 50 Hz",
+  "walking_policy": "progresion_4_mejor.onnx",
+  "turning_policy": "velstand.onnx",
+  "perception": "RGB colour detector + simulated depth; segmentation is not an actor input",
+  "limitations": [
+    "Perfect simulator odometry",
+    "Idealized planar forward depth rays",
+    "No physical robot validation",
+    "Fixed colour classes; not open-vocabulary search",
+    "Supervisory policy trained in an SE2 proxy"
+  ],
+  "trace": [
+    {
+      "time": 0.0,
+      "xy": [
+        1.4505015607050304,
+        0.42184461546353375
+      ],
+      "yaw": 0.03182072455407273,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11588640937703923,
+      "evaluator_true_distance": 1.779175843398994,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 0.6,
+      "xy": [
+        1.4516675014894669,
+        0.4345563198471329
+      ],
+      "yaw": 0.3915181164985206,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11422731125984943,
+      "evaluator_true_distance": 1.7915629740509198,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 1.2,
+      "xy": [
+        1.4513106835448804,
+        0.42679848372533924
+      ],
+      "yaw": 0.9970459120887192,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12056892036141142,
+      "evaluator_true_distance": 1.7839486756964436,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 1.8,
+      "xy": [
+        1.4591578988723335,
+        0.4254935172625858
+      ],
+      "yaw": 1.7582447229741456,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11984275626555312,
+      "evaluator_true_distance": 1.7814830493909564,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 2.4,
+      "xy": [
+        1.4398168987352729,
+        0.42218659028686495
+      ],
+      "yaw": 2.3590929212128118,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12166656165821106,
+      "evaluator_true_distance": 1.7811767897389295,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 3.0,
+      "xy": [
+        1.37022921339715,
+        0.49864953495866404
+      ],
+      "yaw": 2.599240091181294,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12411261697598415,
+      "evaluator_true_distance": 1.8685636504498144,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 3.6,
+      "xy": [
+        1.2285366295218503,
+        0.5610980757730532
+      ],
+      "yaw": 2.7447341890750687,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1271541767351644,
+      "evaluator_true_distance": 1.9607307396680254,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 4.2,
+      "xy": [
+        0.99491595455912,
+        0.6289055775677805
+      ],
+      "yaw": 2.83105228761657,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1201211733071115,
+      "evaluator_true_distance": 2.095629787697237,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 4.8,
+      "xy": [
+        0.7621644301520604,
+        0.7039954256694687
+      ],
+      "yaw": 2.603009115254616,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12123237180642554,
+      "evaluator_true_distance": 2.255041495525869,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 5.4,
+      "xy": [
+        0.5451234386776443,
+        0.7793086268458357
+      ],
+      "yaw": 2.8233498783801787,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12631629562508306,
+      "evaluator_true_distance": 2.4211763869062866,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 6.0,
+      "xy": [
+        0.3350060079337681,
+        0.8527743433389995
+      ],
+      "yaw": 2.8237891748249218,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12503078899852949,
+      "evaluator_true_distance": 2.591753438450808,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 6.6000000000000005,
+      "xy": [
+        0.191103782731988,
+        0.8769466587246627
+      ],
+      "yaw": 2.9987938551942204,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1268835370310418,
+      "evaluator_true_distance": 2.6913885280881815,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 7.2,
+      "xy": [
+        0.005148427671892206,
+        0.8817900895690246
+      ],
+      "yaw": 3.038798068226848,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13381894999495467,
+      "evaluator_true_distance": 2.8051858872835385,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 7.8,
+      "xy": [
+        -0.15117447603607753,
+        0.8858605967320023
+      ],
+      "yaw": -3.1224589316397817,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13746635793816964,
+      "evaluator_true_distance": 2.9066177095975276,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 8.4,
+      "xy": [
+        -0.42562351813577526,
+        0.8585565678159274
+      ],
+      "yaw": -3.0726692942640392,
+      "action": 2,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11568723459899401,
+      "evaluator_true_distance": 3.0710682745803384,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 9.0,
+      "xy": [
+        -0.5558236787470644,
+        0.8567758210588718
+      ],
+      "yaw": 3.042193003688464,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12087866020936618,
+      "evaluator_true_distance": 3.162262889779013,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 9.6,
+      "xy": [
+        -0.6493430898876422,
+        0.8649677077637795
+      ],
+      "yaw": -2.9489555351127685,
+      "action": 2,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1266247755849268,
+      "evaluator_true_distance": 3.2358526375612637,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 10.200000000000001,
+      "xy": [
+        -0.7351685644236696,
+        0.8573970098242105
+      ],
+      "yaw": 2.9901817279210268,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11763282994242713,
+      "evaluator_true_distance": 3.294225286412457,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 10.8,
+      "xy": [
+        -0.8434592918715306,
+        0.8474018037880807
+      ],
+      "yaw": -3.0902736966417357,
+      "action": 2,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12388802693563153,
+      "evaluator_true_distance": 3.369291260891912,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 11.4,
+      "xy": [
+        -0.9375838504224208,
+        0.8552583209886315
+      ],
+      "yaw": 2.811450156017011,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11898511978670556,
+      "evaluator_true_distance": 3.446498715724623,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 12.0,
+      "xy": [
+        -1.0272116334036643,
+        0.9088254902648467
+      ],
+      "yaw": 2.4122877905026776,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11985085101134438,
+      "evaluator_true_distance": 3.54976827184857,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 12.6,
+      "xy": [
+        -1.1118737135923196,
+        0.9788713207974542
+      ],
+      "yaw": 2.3392417231604905,
+      "action": 2,
+      "requested_action": 2,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12122603845214514,
+      "evaluator_true_distance": 3.6596482318445105,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 13.200000000000001,
+      "xy": [
+        -1.1571927814056222,
+        0.9956761188175131
+      ],
+      "yaw": 1.6453094429713906,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12190452353060102,
+      "evaluator_true_distance": 3.7054093968532293,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 13.8,
+      "xy": [
+        -1.1099808454932851,
+        1.0764124191611129
+      ],
+      "yaw": 0.9824279088859409,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12136622221392876,
+      "evaluator_true_distance": 3.7206844309917493,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 14.4,
+      "xy": [
+        -1.0374152920143804,
+        1.1560671539069982
+      ],
+      "yaw": 0.7349505875315139,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12290250270166242,
+      "evaluator_true_distance": 3.718662418166316,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 15.0,
+      "xy": [
+        -0.9589342531435555,
+        1.2195271515606294
+      ],
+      "yaw": 0.5257224316716997,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12085312752770574,
+      "evaluator_true_distance": 3.7042980099976908,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 15.6,
+      "xy": [
+        -0.8645426617422847,
+        1.2733711982855687
+      ],
+      "yaw": 0.279879425677309,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11951921708282981,
+      "evaluator_true_distance": 3.6746044530482997,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 16.2,
+      "xy": [
+        -0.7754971438921816,
+        1.2993293375818527
+      ],
+      "yaw": 0.11739918010345962,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1188783395146268,
+      "evaluator_true_distance": 3.6312707992274773,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 16.8,
+      "xy": [
+        -0.6681463000961251,
+        1.3154739281983971
+      ],
+      "yaw": -0.21035597037190285,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12381611212772581,
+      "evaluator_true_distance": 3.570258810169308,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 17.400000000000002,
+      "xy": [
+        -0.5599390260064641,
+        1.3033002903923776
+      ],
+      "yaw": -0.17171524915619304,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12227846179511836,
+      "evaluator_true_distance": 3.489515715084784,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 18.0,
+      "xy": [
+        -0.4128744564344893,
+        1.301035675400779
+      ],
+      "yaw": -0.09252937424050259,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12578729706878297,
+      "evaluator_true_distance": 3.3933960780541916,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 18.6,
+      "xy": [
+        -0.2557007839319192,
+        1.2992377269814324
+      ],
+      "yaw": -0.43055046503091304,
+      "action": 2,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1208488364993728,
+      "evaluator_true_distance": 3.2953280599135764,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 19.2,
+      "xy": [
+        -0.20883137027183069,
+        1.2543862103405587
+      ],
+      "yaw": -0.8402089734588891,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11737313776218664,
+      "evaluator_true_distance": 3.2313394249825538,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 19.8,
+      "xy": [
+        -0.13922727858285297,
+        1.1925804079838127
+      ],
+      "yaw": -1.2275417416118315,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1263202583332521,
+      "evaluator_true_distance": 3.1402448973416712,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 20.400000000000002,
+      "xy": [
+        -0.06128591611126844,
+        1.1123381155345575
+      ],
+      "yaw": -0.5781916499225717,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13229035372822517,
+      "evaluator_true_distance": 3.029456631337281,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 21.0,
+      "xy": [
+        0.0676441535717347,
+        1.0160581633638814
+      ],
+      "yaw": -0.9884461368507067,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13252187367269377,
+      "evaluator_true_distance": 2.8761183257083287,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 21.6,
+      "xy": [
+        0.2936745119841431,
+        0.806197412431779
+      ],
+      "yaw": -0.8812440545527701,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11361889341421447,
+      "evaluator_true_distance": 2.575228666710124,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 22.2,
+      "xy": [
+        0.4004538733493914,
+        0.6447853860296899
+      ],
+      "yaw": -0.9753136234098194,
+      "action": 1,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.130514870739246,
+      "evaluator_true_distance": 2.3816953453111998,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 22.8,
+      "xy": [
+        0.4121443310752385,
+        0.5967349832746419
+      ],
+      "yaw": -0.06383979188574576,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12051360731468631,
+      "evaluator_true_distance": 2.335297523220191,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 23.400000000000002,
+      "xy": [
+        0.41119491596821084,
+        0.6158314013363057
+      ],
+      "yaw": 0.5848621139969067,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12188886280356435,
+      "evaluator_true_distance": 2.3516593652436377,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 24.0,
+      "xy": [
+        0.42744647449808226,
+        0.6047947167404614
+      ],
+      "yaw": 1.322735243184454,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1199834082597997,
+      "evaluator_true_distance": 2.3334482191080737,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 24.6,
+      "xy": [
+        0.41102598695029124,
+        0.6068529108856192
+      ],
+      "yaw": 1.9763014150998204,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11552389433074582,
+      "evaluator_true_distance": 2.344305483825264,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 25.2,
+      "xy": [
+        0.36227328410910625,
+        0.7095099712721717
+      ],
+      "yaw": 2.2024954337068245,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1231469486149359,
+      "evaluator_true_distance": 2.456730344935124,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 25.8,
+      "xy": [
+        0.24360976436735665,
+        0.832156696423143
+      ],
+      "yaw": 2.347818597120179,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1265893537936228,
+      "evaluator_true_distance": 2.6247418183045057,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 26.400000000000002,
+      "xy": [
+        0.0914013676102674,
+        0.9697616109348214
+      ],
+      "yaw": 2.55639215676453,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12891961983570963,
+      "evaluator_true_distance": 2.8245920064224035,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 27.0,
+      "xy": [
+        -0.0383019113557311,
+        1.0629182718244095
+      ],
+      "yaw": 2.703548961959786,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13938971559811783,
+      "evaluator_true_distance": 2.9759963521181096,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 27.6,
+      "xy": [
+        -0.1597001834952637,
+        1.2038283597153645
+      ],
+      "yaw": 2.4657930835279736,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13553907141234403,
+      "evaluator_true_distance": 3.161454813479777,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 28.2,
+      "xy": [
+        -0.3244466238905449,
+        1.3891484489806554
+      ],
+      "yaw": 2.1104148125910696,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12648987029674094,
+      "evaluator_true_distance": 3.408504591450379,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 28.8,
+      "xy": [
+        -0.44537850886458763,
+        1.55185284579555
+      ],
+      "yaw": 2.2977177764806562,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12765102696436073,
+      "evaluator_true_distance": 3.61122682763354,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 29.400000000000002,
+      "xy": [
+        -0.5860569800225707,
+        1.6985904711289361
+      ],
+      "yaw": 2.398365578927104,
+      "action": 1,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13032227246405598,
+      "evaluator_true_distance": 3.8131099283975387,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 30.0,
+      "xy": [
+        -0.6457524532655234,
+        1.7565952883844058
+      ],
+      "yaw": 3.1212800613805864,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11884361355173384,
+      "evaluator_true_distance": 3.895435992570977,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 30.6,
+      "xy": [
+        -0.7563407467187794,
+        1.7400289690689226
+      ],
+      "yaw": 3.1321958344697425,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1226081277816888,
+      "evaluator_true_distance": 3.9507205540169283,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 31.2,
+      "xy": [
+        -0.8731415629215713,
+        1.7057796985487295
+      ],
+      "yaw": -2.7636199491816558,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12637585487438316,
+      "evaluator_true_distance": 3.998909593173287,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 31.8,
+      "xy": [
+        -1.0395534619716438,
+        1.6114802753362558
+      ],
+      "yaw": -2.7049069110464745,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12808496148417783,
+      "evaluator_true_distance": 4.039543465179219,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 32.4,
+      "xy": [
+        -1.2084041154918321,
+        1.5194911108011482
+      ],
+      "yaw": -2.58835057633013,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12841953001039597,
+      "evaluator_true_distance": 4.09208925430343,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 33.0,
+      "xy": [
+        -1.2495476427241468,
+        1.4867775042288998
+      ],
+      "yaw": -1.8468100531786595,
+      "action": 1,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12241028584064576,
+      "evaluator_true_distance": 4.099055531265681,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 33.6,
+      "xy": [
+        -1.2373756394917095,
+        1.4314848472372328
+      ],
+      "yaw": -1.1312787860208569,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12023600855586633,
+      "evaluator_true_distance": 4.052271963506706,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 34.2,
+      "xy": [
+        -1.1612598330896238,
+        1.331128517962685
+      ],
+      "yaw": -0.8314137532022973,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1260119027118457,
+      "evaluator_true_distance": 3.9281882712554297,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 34.800000000000004,
+      "xy": [
+        -1.0492351802338273,
+        1.2366943878608185
+      ],
+      "yaw": -0.6537282417936048,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12454253792779506,
+      "evaluator_true_distance": 3.781832746960597,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 35.4,
+      "xy": [
+        -0.9177941927319634,
+        1.1459228178364906
+      ],
+      "yaw": -0.5887960191027427,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1248536518051342,
+      "evaluator_true_distance": 3.6238187763526164,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 36.0,
+      "xy": [
+        -0.6924288553862504,
+        1.0185744472858906
+      ],
+      "yaw": -0.7572366815833292,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12498390154579632,
+      "evaluator_true_distance": 3.372960812193298,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 36.6,
+      "xy": [
+        -0.5500657161387696,
+        0.9085055756742737
+      ],
+      "yaw": -0.6348379836707231,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12635618902980258,
+      "evaluator_true_distance": 3.194259234504717,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 37.2,
+      "xy": [
+        -0.4009440548883811,
+        0.804146325126305
+      ],
+      "yaw": -0.575742497379586,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1189303475041111,
+      "evaluator_true_distance": 3.0149876764343047,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 37.800000000000004,
+      "xy": [
+        -0.2945059363617377,
+        0.7313854803821878
+      ],
+      "yaw": -0.6690547463475949,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12454364457427103,
+      "evaluator_true_distance": 2.8884755856034614,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 38.4,
+      "xy": [
+        -0.17823716069926634,
+        0.635654547863573
+      ],
+      "yaw": -0.8625628436535856,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12381359899365604,
+      "evaluator_true_distance": 2.7388115405416213,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 39.0,
+      "xy": [
+        -0.04817554171271796,
+        0.49797340552199054
+      ],
+      "yaw": -0.824651521190309,
+      "action": 2,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12700867330460786,
+      "evaluator_true_distance": 2.5494222614167366,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 39.6,
+      "xy": [
+        0.02228065139239944,
+        0.4090070074571283
+      ],
+      "yaw": -1.2075525468036368,
+      "action": 2,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12133231373704349,
+      "evaluator_true_distance": 2.436504120056905,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 40.2,
+      "xy": [
+        0.02564311869679221,
+        0.36560886816246585
+      ],
+      "yaw": -1.9841054865361925,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1178042202283632,
+      "evaluator_true_distance": 2.4032301667764946,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 40.800000000000004,
+      "xy": [
+        -0.040089135989352175,
+        0.2809904922954357
+      ],
+      "yaw": -2.2984699992999995,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12369960044456796,
+      "evaluator_true_distance": 2.3920679146963875,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 41.4,
+      "xy": [
+        -0.10659970712854541,
+        0.20522657617868328
+      ],
+      "yaw": -2.415018581081767,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12198995486284193,
+      "evaluator_true_distance": 2.391964451710174,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 42.0,
+      "xy": [
+        -0.19543848815866752,
+        0.14458901082834938
+      ],
+      "yaw": -2.6512669201458423,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12384249094969947,
+      "evaluator_true_distance": 2.423023360492591,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 42.6,
+      "xy": [
+        -0.32664819524448957,
+        0.06830410238800363
+      ],
+      "yaw": -2.6154330892382727,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12326041123391097,
+      "evaluator_true_distance": 2.4842212608155223,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 43.2,
+      "xy": [
+        -0.5340260318262205,
+        -0.04634820829519725
+      ],
+      "yaw": -2.8506232918315906,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12433620478246632,
+      "evaluator_true_distance": 2.5990734770182997,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 43.800000000000004,
+      "xy": [
+        -0.7504418564278885,
+        -0.13303849048530525
+      ],
+      "yaw": -3.0067071340515006,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12226962397910011,
+      "evaluator_true_distance": 2.749989967764001,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 44.4,
+      "xy": [
+        -0.9351664164336101,
+        -0.18974770971554034
+      ],
+      "yaw": -2.7604156490913505,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12208714330768049,
+      "evaluator_true_distance": 2.8942754480068222,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 45.0,
+      "xy": [
+        -1.113282616517847,
+        -0.27083764919764614
+      ],
+      "yaw": -2.7177677505738544,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12372632365135959,
+      "evaluator_true_distance": 3.029161350040349,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 45.6,
+      "xy": [
+        -1.268912266017989,
+        -0.37332995725626134
+      ],
+      "yaw": -2.5611148533569934,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12490324151899825,
+      "evaluator_true_distance": 3.1424029663438215,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 46.2,
+      "xy": [
+        -1.3732294002680638,
+        -0.46360706302507104
+      ],
+      "yaw": -2.43972400179857,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12492390384007525,
+      "evaluator_true_distance": 3.216192220474217,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 46.800000000000004,
+      "xy": [
+        -1.4685022274380883,
+        -0.561059142107062
+      ],
+      "yaw": -2.177687807587079,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12812772266087538,
+      "evaluator_true_distance": 3.283622371525037,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 47.4,
+      "xy": [
+        -1.5750344946658197,
+        -0.7395542986704978
+      ],
+      "yaw": -2.0793116988466993,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12301779107591136,
+      "evaluator_true_distance": 3.350882607655427,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 48.0,
+      "xy": [
+        -1.6678308520320797,
+        -0.9539670554117701
+      ],
+      "yaw": -2.005718761191956,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12365770121941887,
+      "evaluator_true_distance": 3.411595702518434,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 48.6,
+      "xy": [
+        -1.734826534949466,
+        -1.1204667555378411
+      ],
+      "yaw": -1.8913972002729962,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12569084832871288,
+      "evaluator_true_distance": 3.4638230376949637,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 49.2,
+      "xy": [
+        -1.7711150072371338,
+        -1.315041837477464
+      ],
+      "yaw": -1.7567518221493816,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12763581259551032,
+      "evaluator_true_distance": 3.4934365772188447,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 49.800000000000004,
+      "xy": [
+        -1.8008149100478497,
+        -1.5142458602272948
+      ],
+      "yaw": -1.68620299249001,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12409199155816747,
+      "evaluator_true_distance": 3.5275541062780134,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 50.4,
+      "xy": [
+        -1.8138931556573599,
+        -1.693630289990887
+      ],
+      "yaw": -1.6640295939416163,
+      "action": 2,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12218541036908687,
+      "evaluator_true_distance": 3.5541419380347326,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 51.0,
+      "xy": [
+        -1.8156266572191124,
+        -1.7877250568366374
+      ],
+      "yaw": -1.8902914287042236,
+      "action": 2,
+      "requested_action": 2,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1194555886153308,
+      "evaluator_true_distance": 3.5665471126524317,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 51.6,
+      "xy": [
+        -1.8348040245676538,
+        -1.7903359031390351
+      ],
+      "yaw": -2.5634683648503844,
+      "action": 2,
+      "requested_action": 2,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12190454360695399,
+      "evaluator_true_distance": 3.585900701185515,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 52.2,
+      "xy": [
+        -1.8308455709235092,
+        -1.8060713995802535
+      ],
+      "yaw": 2.9755099344017863,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12178007241004435,
+      "evaluator_true_distance": 3.5840019941800163,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 52.800000000000004,
+      "xy": [
+        -1.9074845892957395,
+        -1.7580280979434513
+      ],
+      "yaw": 2.5883889991555757,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12102962069485408,
+      "evaluator_true_distance": 3.6541401911752813,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 53.4,
+      "xy": [
+        -1.995932906249308,
+        -1.6892911282618326
+      ],
+      "yaw": 2.324877290804256,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1227153393338283,
+      "evaluator_true_distance": 3.7348924923833926,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 54.0,
+      "xy": [
+        -2.069627595822879,
+        -1.6178711080718255
+      ],
+      "yaw": 2.2232839922080045,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12203742153195428,
+      "evaluator_true_distance": 3.8023119313006224,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 54.6,
+      "xy": [
+        -2.1314528474794274,
+        -1.525075863380356
+      ],
+      "yaw": 1.961716693176255,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1213381992433914,
+      "evaluator_true_distance": 3.8583221001542825,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 55.2,
+      "xy": [
+        -2.1724915284948945,
+        -1.436590255274102
+      ],
+      "yaw": 1.8903921928647336,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12108811197719599,
+      "evaluator_true_distance": 3.896034525946417,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 55.800000000000004,
+      "xy": [
+        -2.195792595557075,
+        -1.3379580798350768
+      ],
+      "yaw": 1.5554313936340993,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11747229581218437,
+      "evaluator_true_distance": 3.918048829217795,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 56.4,
+      "xy": [
+        -2.199494648740695,
+        -1.2245703279803506
+      ],
+      "yaw": 1.3306995738475447,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1220398327889496,
+      "evaluator_true_distance": 3.923346252643835,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 57.0,
+      "xy": [
+        -2.1816393281734574,
+        -1.0608171565350804
+      ],
+      "yaw": 1.4465090929628306,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1229688618545917,
+      "evaluator_true_distance": 3.9136139720511487,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 57.6,
+      "xy": [
+        -2.1493410402565623,
+        -0.831769026315374
+      ],
+      "yaw": 1.2720009504372025,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12500528190950908,
+      "evaluator_true_distance": 3.9043527986471736,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 58.2,
+      "xy": [
+        -2.10564600852818,
+        -0.6268579737534916
+      ],
+      "yaw": 1.1884249569620793,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12412437654105136,
+      "evaluator_true_distance": 3.8931171035317105,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 58.800000000000004,
+      "xy": [
+        -2.0682200225302694,
+        -0.44698334268676204
+      ],
+      "yaw": 1.2956357551592756,
+      "action": 2,
+      "requested_action": 2,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12156914074630096,
+      "evaluator_true_distance": 3.893438998206751,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 59.4,
+      "xy": [
+        -2.0150142419944834,
+        -0.27910518519995475
+      ],
+      "yaw": 0.9627180061353379,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1272548838591537,
+      "evaluator_true_distance": 3.8839639931825607,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 60.0,
+      "xy": [
+        -1.9483858373474507,
+        -0.22528342518596922
+      ],
+      "yaw": 0.4927605474436862,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1195280873160616,
+      "evaluator_true_distance": 3.835141789035476,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 60.6,
+      "xy": [
+        -1.8474496330063008,
+        -0.18120317218630708
+      ],
+      "yaw": 0.23635105036859919,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12051128123153669,
+      "evaluator_true_distance": 3.751986653182944,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 61.2,
+      "xy": [
+        -1.7518324168255328,
+        -0.154858363180593
+      ],
+      "yaw": 0.010123192660916236,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11997601951018594,
+      "evaluator_true_distance": 3.6695312622624505,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 61.800000000000004,
+      "xy": [
+        -1.6573867423230475,
+        -0.15054499197410695
+      ],
+      "yaw": -0.03856207883827689,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12535666282730804,
+      "evaluator_true_distance": 3.581670890057796,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 62.4,
+      "xy": [
+        -1.5319174207894226,
+        -0.14982507286698044
+      ],
+      "yaw": -0.13552186152067267,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12650157013989557,
+      "evaluator_true_distance": 3.4637745309953063,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 63.0,
+      "xy": [
+        -1.3640087442597886,
+        -0.16132935808697033
+      ],
+      "yaw": -0.06734354643237615,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1275457300195535,
+      "evaluator_true_distance": 3.3024156518964345,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 63.6,
+      "xy": [
+        -1.1631785477342762,
+        -0.17042949042664463
+      ],
+      "yaw": -0.23483079401678475,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12269443217178473,
+      "evaluator_true_distance": 3.112128988156993,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 64.2,
+      "xy": [
+        -0.9192050570238713,
+        -0.19863267130666468
+      ],
+      "yaw": -0.22241895375254203,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12390377113172976,
+      "evaluator_true_distance": 2.8761006650936913,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 64.8,
+      "xy": [
+        -0.7835474658129913,
+        -0.21430372271830134
+      ],
+      "yaw": 0.3063021563933763,
+      "action": 1,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11945845359081006,
+      "evaluator_true_distance": 2.7455916289858604,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 65.4,
+      "xy": [
+        -0.7481104823812846,
+        -0.1861207095221655
+      ],
+      "yaw": 0.8517052314286506,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1178564566474736,
+      "evaluator_true_distance": 2.725064846002059,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 66.0,
+      "xy": [
+        -0.6885692335318275,
+        -0.08991226695252652
+      ],
+      "yaw": 0.764700770754297,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12600126083303295,
+      "evaluator_true_distance": 2.7140276168551853,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 66.6,
+      "xy": [
+        -0.606000923916508,
+        -0.0035934175557707296
+      ],
+      "yaw": 0.7704852711340393,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12043872722920385,
+      "evaluator_true_distance": 2.682778235333901,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 67.2,
+      "xy": [
+        -0.5145377079415642,
+        0.10807534162970085
+      ],
+      "yaw": 0.6073060184029494,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.126903246419021,
+      "evaluator_true_distance": 2.6626889952455692,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 67.8,
+      "xy": [
+        -0.36423476933780086,
+        0.2616835347224007
+      ],
+      "yaw": 0.9279141219618456,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1220993016010384,
+      "evaluator_true_distance": 2.6282102456030207,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 68.4,
+      "xy": [
+        -0.26226692895893405,
+        0.4125040875395968
+      ],
+      "yaw": 0.9385351422973348,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1227937342096449,
+      "evaluator_true_distance": 2.645219770337396,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 69.0,
+      "xy": [
+        -0.20319509980429323,
+        0.5096893047561268
+      ],
+      "yaw": 1.625474913378165,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12393331548118851,
+      "evaluator_true_distance": 2.667509916418403,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 69.60000000000001,
+      "xy": [
+        -0.20723100042784634,
+        0.6006449135030454
+      ],
+      "yaw": 1.9111866393380004,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12124691822668458,
+      "evaluator_true_distance": 2.7340948254248683,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 70.2,
+      "xy": [
+        -0.2707206043339305,
+        0.7120989322143766
+      ],
+      "yaw": 2.193006491873326,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12525990848064253,
+      "evaluator_true_distance": 2.858063544405275,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 70.8,
+      "xy": [
+        -0.37447509712490545,
+        0.8081395516034802
+      ],
+      "yaw": 2.1379494421393317,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12672743426526767,
+      "evaluator_true_distance": 2.9992607867944807,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 71.4,
+      "xy": [
+        -0.4462146506593881,
+        0.9011676320888969
+      ],
+      "yaw": 2.2100551041023206,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12007632995434495,
+      "evaluator_true_distance": 3.1159618278263803,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 72.0,
+      "xy": [
+        -0.5604772911497965,
+        1.012982392473922
+      ],
+      "yaw": 2.425778884506193,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12636597878867364,
+      "evaluator_true_distance": 3.2757785869094027,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 72.60000000000001,
+      "xy": [
+        -0.7023827255614827,
+        1.1037652919985796
+      ],
+      "yaw": 2.7412945344223743,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1274870226444678,
+      "evaluator_true_distance": 3.4399921440318573,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 73.2,
+      "xy": [
+        -0.8875943494021531,
+        1.1655709279517479
+      ],
+      "yaw": 2.8236418166410537,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12280028098030503,
+      "evaluator_true_distance": 3.6154460931395915,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 73.8,
+      "xy": [
+        -1.0987768597652077,
+        1.1982359227840094
+      ],
+      "yaw": 2.9620538819111593,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12336415538532926,
+      "evaluator_true_distance": 3.7924770644761656,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 74.4,
+      "xy": [
+        -1.2310970307833449,
+        1.2139820830653298
+      ],
+      "yaw": -2.7372087078119764,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12024262747235803,
+      "evaluator_true_distance": 3.9021815984926738,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 75.0,
+      "xy": [
+        -1.2406808233137547,
+        1.2227113208541747
+      ],
+      "yaw": -1.9447431008065714,
+      "action": 2,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11879309107930114,
+      "evaluator_true_distance": 3.9151404390818585,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 75.60000000000001,
+      "xy": [
+        -1.255501436766788,
+        1.2256881665067065
+      ],
+      "yaw": -2.0030886212059187,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1203832835941632,
+      "evaluator_true_distance": 3.9283093991003906,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 76.2,
+      "xy": [
+        -1.2386237559476703,
+        1.227598363040012
+      ],
+      "yaw": -1.5696978819045186,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12247785979989423,
+      "evaluator_true_distance": 3.916781377010561,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 76.8,
+      "xy": [
+        -1.233620773315574,
+        1.1208791490736192
+      ],
+      "yaw": -1.3148127588907499,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12161149336075797,
+      "evaluator_true_distance": 3.8439168144447815,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 77.4,
+      "xy": [
+        -1.1768840506320999,
+        0.9388323686371679
+      ],
+      "yaw": -1.178439312548173,
+      "action": 1,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12783965679913215,
+      "evaluator_true_distance": 3.6853688609377797,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 78.0,
+      "xy": [
+        -1.1646244960854093,
+        0.8799003548327745
+      ],
+      "yaw": -0.24049899784967418,
+      "action": 1,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11973212175622373,
+      "evaluator_true_distance": 3.639547787933324,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 78.60000000000001,
+      "xy": [
+        -1.0970571174458736,
+        0.8963728920686231
+      ],
+      "yaw": 0.08332096722499284,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12256109830794856,
+      "evaluator_true_distance": 3.5963933166562385,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 79.2,
+      "xy": [
+        -0.956047763806818,
+        0.9428086256658494
+      ],
+      "yaw": 0.4208638623787854,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1231858628742645,
+      "evaluator_true_distance": 3.516866751225299,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 79.8,
+      "xy": [
+        -0.7940254026918271,
+        1.053808442761846
+      ],
+      "yaw": 0.6041937270554204,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12590639191984107,
+      "evaluator_true_distance": 3.4705949602767774,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 80.4,
+      "xy": [
+        -0.6257336368448906,
+        1.194287221623373
+      ],
+      "yaw": 0.6419931375032467,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1273655741845503,
+      "evaluator_true_distance": 3.452203556637447,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 81.0,
+      "xy": [
+        -0.4201278171115121,
+        1.3518864100830166
+      ],
+      "yaw": 0.31709052575802454,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1256008129746506,
+      "evaluator_true_distance": 3.4375842872992948,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 81.60000000000001,
+      "xy": [
+        -0.3259312018069078,
+        1.4009061110725283
+      ],
+      "yaw": 0.04958966189740808,
+      "action": 2,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11900764766069181,
+      "evaluator_true_distance": 3.418803067653167,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 82.2,
+      "xy": [
+        -0.31923965788020237,
+        1.3808872942955275
+      ],
+      "yaw": -0.6969946546861494,
+      "action": 2,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12169949195942295,
+      "evaluator_true_distance": 3.39877204743113,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 82.8,
+      "xy": [
+        -0.2931027616543098,
+        1.3550100255197515
+      ],
+      "yaw": -1.3432527381152848,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11917698098788568,
+      "evaluator_true_distance": 3.3623879473790326,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 83.4,
+      "xy": [
+        -0.2698119487025443,
+        1.2102168009728391
+      ],
+      "yaw": -1.316030816390977,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12586071037931365,
+      "evaluator_true_distance": 3.2332444805108804,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 84.0,
+      "xy": [
+        -0.20921156535485358,
+        1.0578493430026428
+      ],
+      "yaw": -1.0062935839205194,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13170269424400766,
+      "evaluator_true_distance": 3.0762409299336553,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 84.60000000000001,
+      "xy": [
+        -0.17035271259217583,
+        0.9070139725815989
+      ],
+      "yaw": -1.5940009135725421,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.13847507506159346,
+      "evaluator_true_distance": 2.9351522791643228,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 85.2,
+      "xy": [
+        -0.18776221206488913,
+        0.600923648302135
+      ],
+      "yaw": -1.8845019768710127,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.10907052715791409,
+      "evaluator_true_distance": 2.7205888983720583,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 85.8,
+      "xy": [
+        -0.2502397248123772,
+        0.40566759283214904
+      ],
+      "yaw": -2.005858751624617,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12654463751214234,
+      "evaluator_true_distance": 2.631677983183068,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 86.4,
+      "xy": [
+        -0.289390102844812,
+        0.21211837249952092
+      ],
+      "yaw": -1.8108803211287061,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1215337774088656,
+      "evaluator_true_distance": 2.538660703282715,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 87.0,
+      "xy": [
+        -0.3265102349451735,
+        0.035757478431715915
+      ],
+      "yaw": -1.7924187089724173,
+      "action": 0,
+      "requested_action": 0,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12384696582684443,
+      "evaluator_true_distance": 2.4658485215391543,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 87.60000000000001,
+      "xy": [
+        -0.3716221305449581,
+        -0.17215389586948446
+      ],
+      "yaw": -1.4576288103784751,
+      "action": 1,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12405046826919851,
+      "evaluator_true_distance": 2.3958133473559116,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 88.2,
+      "xy": [
+        -0.32482123201635926,
+        -0.24752771430497872
+      ],
+      "yaw": -1.0909647753626601,
+      "action": 3,
+      "requested_action": 3,
+      "visible": true,
+      "bearing": 0.6001622331167548,
+      "detected_distance": 2.2254728332512257,
+      "z": 0.12034991142790559,
+      "evaluator_true_distance": 2.318682125045706,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 88.8,
+      "xy": [
+        -0.24179245886387093,
+        -0.32608960744674126
+      ],
+      "yaw": -0.6443578380686256,
+      "action": 3,
+      "requested_action": 3,
+      "visible": true,
+      "bearing": -0.021871511825000692,
+      "detected_distance": 2.0590480696316384,
+      "z": 0.11960750540416293,
+      "evaluator_true_distance": 2.2086927382778394,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 89.4,
+      "xy": [
+        -0.1015498683557213,
+        -0.4100071687948225
+      ],
+      "yaw": -0.464621020396792,
+      "action": 0,
+      "requested_action": 0,
+      "visible": true,
+      "bearing": 0.20938539295349545,
+      "detected_distance": 1.714728977823986,
+      "z": 0.12287018289591126,
+      "evaluator_true_distance": 2.045622776507206,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 90.0,
+      "xy": [
+        0.11796301478402064,
+        -0.4965375527312743
+      ],
+      "yaw": -0.4160705703506254,
+      "action": 0,
+      "requested_action": 0,
+      "visible": true,
+      "bearing": -0.3778095120216464,
+      "detected_distance": 1.4270237430177088,
+      "z": 0.12406883174824218,
+      "evaluator_true_distance": 1.8108607078175167,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 90.60000000000001,
+      "xy": [
+        0.3417249557918989,
+        -0.5875152362477368
+      ],
+      "yaw": -0.3687280741183644,
+      "action": 0,
+      "requested_action": 0,
+      "visible": true,
+      "bearing": -0.1519447723822072,
+      "detected_distance": 1.2428834421130768,
+      "z": 0.12781583903390847,
+      "evaluator_true_distance": 1.5705973475379194,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 91.2,
+      "xy": [
+        0.5851120172544592,
+        -0.6761063383774337
+      ],
+      "yaw": -0.4076274997941392,
+      "action": 3,
+      "requested_action": 3,
+      "visible": true,
+      "bearing": 0.09657364535103545,
+      "detected_distance": 1.0567696865333172,
+      "z": 0.12353587312412855,
+      "evaluator_true_distance": 1.3149738320554427,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 91.8,
+      "xy": [
+        0.7885036161092688,
+        -0.7249588158657837
+      ],
+      "yaw": -0.08663974564273227,
+      "action": 3,
+      "requested_action": 3,
+      "visible": true,
+      "bearing": -0.7548118917865478,
+      "detected_distance": 1.003375917409601,
+      "z": 0.12280895393328697,
+      "evaluator_true_distance": 1.1161633136203675,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 92.4,
+      "xy": [
+        0.9487349232148571,
+        -0.726601162576042
+      ],
+      "yaw": 0.030409514219586313,
+      "action": 3,
+      "requested_action": 3,
+      "visible": true,
+      "bearing": -0.5872811029512623,
+      "detected_distance": 0.8535360634277269,
+      "z": 0.12290992568959419,
+      "evaluator_true_distance": 0.9850157476235807,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 93.0,
+      "xy": [
+        1.1198772156892753,
+        -0.6991084581984006
+      ],
+      "yaw": 0.31970908833766715,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12574011167926974,
+      "evaluator_true_distance": 0.8769665195171558,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 93.60000000000001,
+      "xy": [
+        1.2681574749577447,
+        -0.6387698610995688
+      ],
+      "yaw": 0.3545949457870445,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1252751171763013,
+      "evaluator_true_distance": 0.8324478706170991,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 94.2,
+      "xy": [
+        1.4153569884527892,
+        -0.5525106861750015
+      ],
+      "yaw": 0.6545718383619084,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12517689765295562,
+      "evaluator_true_distance": 0.8418759270558207,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 94.8,
+      "xy": [
+        1.5670914197445749,
+        -0.4304985104761588
+      ],
+      "yaw": 0.6057449681680387,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12174643093425863,
+      "evaluator_true_distance": 0.9191477140697154,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 95.4,
+      "xy": [
+        1.7497216814382088,
+        -0.2817819350671826
+      ],
+      "yaw": 0.4094366407664628,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12464490913228686,
+      "evaluator_true_distance": 1.0550302649159613,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 96.0,
+      "xy": [
+        1.945296381293509,
+        -0.18549086708848997
+      ],
+      "yaw": 0.4289357180845334,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12652361449103358,
+      "evaluator_true_distance": 1.1723756306879785,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 96.60000000000001,
+      "xy": [
+        2.1314508864124653,
+        -0.10174841653494256
+      ],
+      "yaw": 0.18271128096280695,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12141985702809285,
+      "evaluator_true_distance": 1.300745914168764,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 97.2,
+      "xy": [
+        2.3164714608761874,
+        -0.0647847750253836
+      ],
+      "yaw": 0.4541977379793073,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1228349325718702,
+      "evaluator_true_distance": 1.4036510602195547,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 97.8,
+      "xy": [
+        2.338849213240794,
+        -0.04968906750337891
+      ],
+      "yaw": 1.3090986809993688,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1158874252812094,
+      "evaluator_true_distance": 1.4268682037073854,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 98.4,
+      "xy": [
+        2.3413749761078466,
+        -0.04694896302665628
+      ],
+      "yaw": 2.016705060907006,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12037318300851668,
+      "evaluator_true_distance": 1.4304311375661258,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 99.0,
+      "xy": [
+        2.27597451072744,
+        0.035232613021427425
+      ],
+      "yaw": 2.373141445737981,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1189560729084265,
+      "evaluator_true_distance": 1.4792329573774246,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 99.60000000000001,
+      "xy": [
+        2.156373705004569,
+        0.12330078060729183
+      ],
+      "yaw": 2.5261249250242206,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12708892234471636,
+      "evaluator_true_distance": 1.522939292247882,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 100.2,
+      "xy": [
+        1.971742523982093,
+        0.2082072142677848
+      ],
+      "yaw": 2.8229092417503323,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12281581474568284,
+      "evaluator_true_distance": 1.564680084174212,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 100.8,
+      "xy": [
+        1.7849019239472876,
+        0.2528988946554304
+      ],
+      "yaw": 2.948761511307008,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12184164432330082,
+      "evaluator_true_distance": 1.590587672737071,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 101.4,
+      "xy": [
+        1.6078963269866535,
+        0.2518114058022154
+      ],
+      "yaw": -3.1236539007699333,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12466896276174402,
+      "evaluator_true_distance": 1.592377820254448,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 102.0,
+      "xy": [
+        1.3944718448373252,
+        0.2467121586161908
+      ],
+      "yaw": -3.0496445204931777,
+      "action": 3,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12710284074534522,
+      "evaluator_true_distance": 1.616743485129555,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 102.60000000000001,
+      "xy": [
+        1.2037066950886413,
+        0.2076438206614582
+      ],
+      "yaw": -3.047204417808585,
+      "action": 2,
+      "requested_action": 3,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1260348448375316,
+      "evaluator_true_distance": 1.6288441760393446,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 103.2,
+      "xy": [
+        1.097362015767776,
+        0.18345427560585967
+      ],
+      "yaw": -2.4531094514092713,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1243595454304193,
+      "evaluator_true_distance": 1.643354953769426,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 103.8,
+      "xy": [
+        1.0778960641567916,
+        0.19386769295696493
+      ],
+      "yaw": -1.622600422850758,
+      "action": 1,
+      "requested_action": 3,
+      "visible": true,
+      "bearing": 0.6293534928956559,
+      "detected_distance": 1.5675893036714363,
+      "z": 0.12034667529295785,
+      "evaluator_true_distance": 1.6604475505518934,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 104.4,
+      "xy": [
+        1.1332760698685047,
+        0.12579084475286603
+      ],
+      "yaw": -1.0766133163357476,
+      "action": 0,
+      "requested_action": 0,
+      "visible": true,
+      "bearing": -0.23613585751336005,
+      "detected_distance": 1.4845814849403247,
+      "z": 0.12122545240938823,
+      "evaluator_true_distance": 1.5764070291930792,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 105.0,
+      "xy": [
+        1.2513274396856644,
+        -0.017217397925999085
+      ],
+      "yaw": -0.8399514363784176,
+      "action": 4,
+      "requested_action": 4,
+      "visible": true,
+      "bearing": -0.300035365846904,
+      "detected_distance": 1.1310878819260164,
+      "z": 0.12342201582203874,
+      "evaluator_true_distance": 1.4007714058805807,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 105.60000000000001,
+      "xy": [
+        1.4196948344731484,
+        -0.1802525342706731
+      ],
+      "yaw": -1.0326325268825287,
+      "action": 0,
+      "requested_action": 0,
+      "visible": true,
+      "bearing": -0.47606933032276116,
+      "detected_distance": 1.0112581344687148,
+      "z": 0.12192136466196149,
+      "evaluator_true_distance": 1.1951345161365292,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 106.2,
+      "xy": [
+        1.5428819504755191,
+        -0.3609918891958815
+      ],
+      "yaw": -0.9188460877690598,
+      "action": 0,
+      "requested_action": 0,
+      "visible": true,
+      "bearing": -0.46614448271334796,
+      "detected_distance": 0.7949591773288989,
+      "z": 0.12743117254506484,
+      "evaluator_true_distance": 0.9918178202087753,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 106.8,
+      "xy": [
+        1.6952211368509815,
+        -0.5522961854543116
+      ],
+      "yaw": -1.046872048628107,
+      "action": 0,
+      "requested_action": 0,
+      "visible": true,
+      "bearing": -0.5288512981438463,
+      "detected_distance": 0.6512148996491184,
+      "z": 0.12783761793185774,
+      "evaluator_true_distance": 0.7846243348604686,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 107.4,
+      "xy": [
+        1.8460874045928157,
+        -0.745293030988483
+      ],
+      "yaw": -0.9408653761765597,
+      "action": 4,
+      "requested_action": 4,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12246640432599892,
+      "evaluator_true_distance": 0.6039919422966558,
+      "evaluator_target_pixels": 0
+    }
+  ]
+}

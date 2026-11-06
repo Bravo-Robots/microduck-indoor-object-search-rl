@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.onnx binary
+*.pt binary
+*.blend binary
+*.stl binary
+*.mp4 binary
+third_party/** linguist-vendored
+assets/** linguist-generated
+benchmarks/** linguist-generated
+uv.lock linguist-generated

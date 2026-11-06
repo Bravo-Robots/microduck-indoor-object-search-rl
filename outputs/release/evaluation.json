@@ -1,0 +1,266 @@
+{
+  "episodes": 64,
+  "success_rate": 0.9375,
+  "mean_steps": 54.75,
+  "collision_step_rate": 0.2137557077625571,
+  "seed": 937,
+  "simulator": "SE2 search proxy, ideal forward-depth and object detector",
+  "episodes_detail": [
+    {
+      "success": true,
+      "steps": 3
+    },
+    {
+      "success": true,
+      "steps": 6
+    },
+    {
+      "success": true,
+      "steps": 9
+    },
+    {
+      "success": true,
+      "steps": 10
+    },
+    {
+      "success": true,
+      "steps": 12
+    },
+    {
+      "success": true,
+      "steps": 13
+    },
+    {
+      "success": true,
+      "steps": 14
+    },
+    {
+      "success": true,
+      "steps": 15
+    },
+    {
+      "success": true,
+      "steps": 16
+    },
+    {
+      "success": true,
+      "steps": 17
+    },
+    {
+      "success": true,
+      "steps": 17
+    },
+    {
+      "success": true,
+      "steps": 19
+    },
+    {
+      "success": true,
+      "steps": 19
+    },
+    {
+      "success": true,
+      "steps": 19
+    },
+    {
+      "success": true,
+      "steps": 21
+    },
+    {
+      "success": true,
+      "steps": 22
+    },
+    {
+      "success": true,
+      "steps": 22
+    },
+    {
+      "success": true,
+      "steps": 22
+    },
+    {
+      "success": true,
+      "steps": 25
+    },
+    {
+      "success": true,
+      "steps": 25
+    },
+    {
+      "success": true,
+      "steps": 26
+    },
+    {
+      "success": true,
+      "steps": 27
+    },
+    {
+      "success": true,
+      "steps": 27
+    },
+    {
+      "success": true,
+      "steps": 28
+    },
+    {
+      "success": true,
+      "steps": 32
+    },
+    {
+      "success": true,
+      "steps": 32
+    },
+    {
+      "success": true,
+      "steps": 34
+    },
+    {
+      "success": true,
+      "steps": 34
+    },
+    {
+      "success": true,
+      "steps": 35
+    },
+    {
+      "success": true,
+      "steps": 36
+    },
+    {
+      "success": true,
+      "steps": 37
+    },
+    {
+      "success": true,
+      "steps": 37
+    },
+    {
+      "success": true,
+      "steps": 42
+    },
+    {
+      "success": true,
+      "steps": 43
+    },
+    {
+      "success": true,
+      "steps": 43
+    },
+    {
+      "success": true,
+      "steps": 44
+    },
+    {
+      "success": true,
+      "steps": 44
+    },
+    {
+      "success": true,
+      "steps": 44
+    },
+    {
+      "success": true,
+      "steps": 47
+    },
+    {
+      "success": true,
+      "steps": 47
+    },
+    {
+      "success": true,
+      "steps": 52
+    },
+    {
+      "success": true,
+      "steps": 58
+    },
+    {
+      "success": true,
+      "steps": 60
+    },
+    {
+      "success": true,
+      "steps": 60
+    },
+    {
+      "success": true,
+      "steps": 62
+    },
+    {
+      "success": true,
+      "steps": 62
+    },
+    {
+      "success": true,
+      "steps": 62
+    },
+    {
+      "success": true,
+      "steps": 63
+    },
+    {
+      "success": true,
+      "steps": 65
+    },
+    {
+      "success": true,
+      "steps": 68
+    },
+    {
+      "success": true,
+      "steps": 72
+    },
+    {
+      "success": true,
+      "steps": 81
+    },
+    {
+      "success": true,
+      "steps": 86
+    },
+    {
+      "success": true,
+      "steps": 91
+    },
+    {
+      "success": true,
+      "steps": 99
+    },
+    {
+      "success": true,
+      "steps": 102
+    },
+    {
+      "success": true,
+      "steps": 109
+    },
+    {
+      "success": true,
+      "steps": 143
+    },
+    {
+      "success": true,
+      "steps": 159
+    },
+    {
+      "success": true,
+      "steps": 165
+    },
+    {
+      "success": false,
+      "steps": 180
+    },
+    {
+      "success": false,
+      "steps": 180
+    },
+    {
+      "success": false,
+      "steps": 180
+    },
+    {
+      "success": false,
+      "steps": 180
+    }
+  ]
+}

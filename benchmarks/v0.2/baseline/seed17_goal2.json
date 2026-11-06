@@ -1,0 +1,142 @@
+{
+  "success": true,
+  "fall": false,
+  "simulated_seconds": 3.619999999999923,
+  "wall_seconds": 0.4381234645843506,
+  "goal": "cilindro_amarillo",
+  "seed": 17,
+  "contact_steps": 0,
+  "detector_visible_observations": 1,
+  "controller": "baseline",
+  "false_confirmations": 0,
+  "depth_guard_overrides": 0,
+  "depth_guard": "10 Hz, depth-only advance-to-turn override, identical for RL and baseline",
+  "termination_reason": "success",
+  "scene_file": "seed17_goal2.scene.xml",
+  "success_criterion": "Actor declares visible target within 0.55 m estimated camera range; evaluator verifies target pixels and trunk distance <0.75 m",
+  "physics": "MuJoCo 3.10, free floating MicroDuck, BAM M6, ONNX motor policies at 50 Hz",
+  "walking_policy": "progresion_4_mejor.onnx",
+  "turning_policy": "velstand.onnx",
+  "perception": "RGB colour detector + simulated depth; segmentation is not an actor input",
+  "limitations": [
+    "Perfect simulator odometry",
+    "Idealized planar forward depth rays",
+    "No physical robot validation",
+    "Fixed colour classes; not open-vocabulary search",
+    "Supervisory policy trained in an SE2 proxy"
+  ],
+  "trace": [
+    {
+      "time": 0.0,
+      "xy": [
+        -1.576728463632738,
+        -0.18134449529238642
+      ],
+      "yaw": 0.03182072455407216,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11588640937703931,
+      "evaluator_true_distance": 0.44105793162848883,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 0.6,
+      "xy": [
+        -1.5755625514892702,
+        -0.16863299796029646
+      ],
+      "yaw": 0.3915195038751937,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.1142273714054023,
+      "evaluator_true_distance": 0.44961309726701604,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 1.2,
+      "xy": [
+        -1.5758292047911564,
+        -0.17711856312879196
+      ],
+      "yaw": 1.0082725874278955,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12032633327651886,
+      "evaluator_true_distance": 0.4442903070336806,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 1.8,
+      "xy": [
+        -1.5695257995039738,
+        -0.17852949421432557
+      ],
+      "yaw": 1.7287281659215785,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.11884086668827577,
+      "evaluator_true_distance": 0.44853609297091585,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 2.4,
+      "xy": [
+        -1.586125158563973,
+        -0.18101602933740316
+      ],
+      "yaw": 2.3206265697840682,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12219437986208033,
+      "evaluator_true_distance": 0.4337112968875974,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 3.0,
+      "xy": [
+        -1.5771580450001035,
+        -0.1639554434923816
+      ],
+      "yaw": 3.0777676296025733,
+      "action": 1,
+      "requested_action": 1,
+      "visible": false,
+      "bearing": 0.0,
+      "detected_distance": 0.0,
+      "z": 0.12058581830824007,
+      "evaluator_true_distance": 0.45121499872409143,
+      "evaluator_target_pixels": 0
+    },
+    {
+      "time": 3.6,
+      "xy": [
+        -1.5765866265467559,
+        -0.18201622106570778
+      ],
+      "yaw": -2.568691567690065,
+      "action": 5,
+      "requested_action": 5,
+      "visible": true,
+      "bearing": 0.1823273814966345,
+      "detected_distance": 0.34910813389239714,
+      "z": 0.11606423744064162,
+      "evaluator_true_distance": 0.4407757743779233,
+      "evaluator_target_pixels": 1817
+    }
+  ]
+}

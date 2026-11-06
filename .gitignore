@@ -1,0 +1,16 @@
+.venv/
+.ruff_cache/
+.blender-venv*/
+__pycache__/
+*.pyc
+*.blend1
+assets/robot_blender_meshes.json
+assets/room.xml
+outputs/*
+!outputs/release/
+references/video_transcript_es.txt
+references/video_frames/
+benchmarks/**/*.scene.xml
+benchmarks/**/*.confirmation.png
+benchmarks/**/checkpoint.pt
+scripts/make_reference_sheet.py

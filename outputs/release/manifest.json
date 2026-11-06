@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "kind": "supervisory_search",
+  "input": [
+    1,
+    45
+  ],
+  "output": [
+    1,
+    6
+  ],
+  "direct_robotctl_load": false,
+  "training_simulator": "SE2 proxy, PPO",
+  "training_steps": 11993088,
+  "selected_checkpoint_steps": 10444800,
+  "training_seed": 42,
+  "validation_seed": 937,
+  "motor_policies": [
+    "progresion_4_mejor.onnx",
+    "velstand.onnx",
+    "alpha_stand.onnx"
+  ],
+  "actor_inputs": "Forward depth, visible RGB detections, odometry and visit memory; no hidden target position",
+  "sha256": {
+    "best.pt": "0f9948a6d547e1f5408c7a1d4a1108b4475d668803bb4f1c35b2fddf411f8d40",
+    "search_policy.onnx": "6bb524da8b1575d38f4c297261c1fc4417963b8f0371a145ba9c679980fdc8f6"
+  }
+}

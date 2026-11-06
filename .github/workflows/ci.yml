@@ -1,0 +1,44 @@
+name: checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  linux-cpu:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      MUJOCO_GL: osmesa
+      OMP_NUM_THREADS: '2'
+      CUDA_VISIBLE_DEVICES: ''
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2
+        with:
+          version: '0.13.1'
+          python-version: '3.12'
+          enable-cache: true
+      - name: Install headless rendering libraries
+        run: sudo apt-get update && sudo apt-get install -y libosmesa6 libglfw3
+      - name: Install locked environment
+        run: uv sync --locked
+      - name: Lint and format
+        run: |
+          uv run --locked ruff check duck_search scripts tests
+          uv run --locked ruff format --check duck_search scripts tests
+      - name: Check bundled models
+        run: bash run.sh doctor
+      - name: Tests
+        run: uv run --locked python -m unittest discover -s tests -v
+      - name: Short CPU training and export
+        run: bash run.sh train --device cpu --steps 1536 --envs 8 --output outputs/ci-training
+      - name: Render and rehearse without a GPU
+        run: |
+          bash run.sh preview
+          bash run.sh rehearse --seed 0 --goal 0 --seconds 20 --no-video --output outputs/ci-rehearsal.json
+          uv run --locked python -c "import json; r=json.load(open('outputs/ci-rehearsal.json')); assert r['success'] and not r['fall'] and r['contact_steps'] == 0, r"
+      - name: Validate publication files
+        run: uv run --locked python scripts/check_repo.py
